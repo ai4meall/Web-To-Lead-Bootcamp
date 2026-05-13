@@ -6,6 +6,7 @@
     <title>Web To Lead Form</title>
     <link rel="stylesheet" href="style.css"/>
     <script src="script.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 <body>
 <h1> Create Lead</h1>
@@ -17,6 +18,8 @@ onsubmit="beforesubmit()"
 <input type=hidden name="oid" value="00DNS000000633H">
 <input type=hidden name="retURL" value="https://ai4meall.github.io/Web-To-Lead-Bootcamp/thanks.html">
 <input type=hidden name="Lead_Date__c" class="outputDate" />
+<input type=hidden name='captcha_settings' value='{"keyname":"WebToLead","fallback":"true","orgId":"00DNS000000633H","ts":""}'>
+
 
 <label for="first_name">First Name</label>
     <input  id="first_name" maxlength="40" name="first_name" size="20" type="text" required="true"/><br>
@@ -36,8 +39,16 @@ onsubmit="beforesubmit()"
     <input  id="00NNS00003FyXmv" name="00NNS00003FyXmv" size="12" type="text" />
 </span><br> -->
 
+
 <input type="submit" name="submit" class="submit">
+
+<div class="g-recaptcha" data-sitekey="6LffuucsAAAAAIYiFQblutYTKW0FR96PzfzX4ZAk">
+
+</div><br>
 
 </form>
 </body>
 </html>
+
+
+
